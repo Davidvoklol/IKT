@@ -1,17 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
-.mountains-of-christmas {
-    font-family: "Mountains of Christmas", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
 
 :root {
     --bg: #19282F;
-    --fg: #D3ECA7;
+    --fg: #559e62;
     --highlight: #B33030;
-    --silent: #A1B57D;
+    --yellow: #eec319;
 }
 
 * {
@@ -20,23 +14,25 @@
     box-sizing: border-box;
 }
 
-body {
+body, main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
+body {
     padding: 1em;
     gap: 3em;
 
-    font-family: "Mountains of Christmas", serif;
+    font-family: "Borel", cursive;
     font-weight: 400;
-    font-style: normal;
 
     color: var(--fg);
     background-color: var(--bg);
 }
 
 h1 {
+    font-family: "Mountains of Christmas", serif;
     text-align: center;
     font-size: 400%;
     font-weight: 900;
@@ -50,5 +46,34 @@ h1 {
 }
 
 .tree{
-    width: 50em;
+    width: 50vw;
+}
+
+.presents {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    border: 1px solid black;
+}
+
+/* width */
+::-webkit-scrollbar {
+    min-width: 10px;
+    width: 1vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background: var(--fg);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--highlight);
 }
