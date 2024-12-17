@@ -17,3 +17,24 @@ button:hover {
     background-color: var(--yellow);
     color: var(--bg);
 }
+
+div{
+    margin-inline: 400px;
+}
+p{
+    border: 3px solid ;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(22, 41, 41) ;
+    color: var(--fg) ;
+    margin: 10px;
+}
+
+h3{
+    border: 3px solid var(--highlight);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 170%;
+    background-color: #0f181d;
+
+}
