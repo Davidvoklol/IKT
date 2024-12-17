@@ -43,5 +43,15 @@ h3{
     font-style: italic;
     background-color: rgb(49, 51, 29) ;
     box-shadow: 0 0 20px 15px rgb(49, 51, 29);
+}
+
+h1{
+    background-image: url(/sources/kepek/gombok.jpg);
+    background-size: contain;
+    background-position: 0 -20px;
+    color: var(--bg);
+    border-radius: 20px;
+    margin-block: 1.5rem;
+    
 
 }

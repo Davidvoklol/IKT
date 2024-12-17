@@ -113,8 +113,27 @@ footer{
     text-align: center;
     font-family:"Markazi Text", serif;
     font-size: 1.5em;
-}
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: .5em;
+    .kep{
+        width: 150px; 
+        height: 150px;
+        border-radius: 50%; 
+        overflow: hidden; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: spin 1.5s infinite linear;
+    }
+    img{
+        width: auto; 
+        height: 100%;
 
+    }
+}
 
 
 /* width */
@@ -137,4 +156,11 @@ footer{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: var(--highlight);
+}
+
+@keyframes spin {
+    to{
+        transform: rotateZ(360deg);
+    }
+    
 }
