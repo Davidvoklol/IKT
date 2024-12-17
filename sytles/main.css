@@ -30,7 +30,6 @@ body, main {
 }
 
 body {
-    padding: 1em;
     gap: 3em;
 
     font-weight: 400;
@@ -50,6 +49,7 @@ h1 {
     text-align: center;
     font-size: 400%;
     font-weight: 900;
+    padding: 1rem;
 }
 
 h2 {
@@ -102,6 +102,20 @@ button:hover {
     background-color: var(--bg);
     color: var(--yellow);
 }
+
+
+
+
+footer{
+    background-color: var(--highlight);
+    margin: none;
+    width: 100%;
+    text-align: center;
+    font-family:"Markazi Text", serif;
+    font-size: 1.5em;
+}
+
+
 
 /* width */
 ::-webkit-scrollbar {
